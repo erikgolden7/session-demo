@@ -34,6 +34,7 @@ const getPeople = (req, res) => {
 
 const addPerson = (req, res) => {
   people.push(req.body);
+  res.status(200).json(people);
 };
 
 module.exports = {
